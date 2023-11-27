@@ -1,0 +1,19 @@
+1. app folder: The main folder for the application, keep model and controller here. 
+
+2. Config folder: All config files are located here, e.g. database config. 
+"mail.php"
+
+3. Database folder: Where we manage data (e.g. create tables)
+
+4. public folder: ...
+
+5. resources folder
+   view: html file here
+
+6. compile file using webpack
+
+7. routes-->web.php: all the routes are here 
+
+8. vender: downloaded using Composer 
+
+9. ".env": all the sensitive information are kept here. 
