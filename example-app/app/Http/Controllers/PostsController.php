@@ -62,4 +62,9 @@ class PostsController extends Controller
     {
         //
     }
+
+    public function contact(){
+        return view('contact');
+        // if not in the view directory, can use:   return view('pages.contact')
+    }
 }

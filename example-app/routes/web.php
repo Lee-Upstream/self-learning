@@ -47,3 +47,5 @@ Route::get('/post/{id}', [PostsController::class, 'index']);
 Route::resource('/post', 'PostsController');
 
 Route :: post('/post/${id}', [PostsController::class, 'show']);
+
+Route :: get('/contact', [PostsController :: class, 'contact']);
