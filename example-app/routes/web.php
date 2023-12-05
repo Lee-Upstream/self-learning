@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\PostsController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -27,9 +27,9 @@ Route :: get ('about', function(){
 });
 
 // variable, passing parameters
-Route :: get ('/post/{id}/{name}', function($id, $name){
-    return "this is post number " . $id . "with name " . $name;
-});
+// Route :: get ('/post/{id}/{name}', function($id, $name){
+//     return "this is post number " . $id . "with name " . $name;
+// });
 
 
 // puting an array in the second parameter that wrapping everything
@@ -41,3 +41,5 @@ Route :: get('admin/posts/example', array('as'=>'admin.home',function(){
 
 //php artisan route:list
 
+
+Route::get('/post/{id}', [PostsController::class, 'index']);

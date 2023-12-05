@@ -17,3 +17,8 @@
 8. vender: downloaded using Composer 
 
 9. ".env": all the sensitive information are kept here. 
+
+
+Controller: (app/Http/Controller/Controller.php)
+    Controllers are classes that deal with information coming from database, and relating 
+    that informaton or explain it, or passing that information to view. 
