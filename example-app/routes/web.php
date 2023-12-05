@@ -43,3 +43,7 @@ Route :: get('admin/posts/example', array('as'=>'admin.home',function(){
 
 
 Route::get('/post/{id}', [PostsController::class, 'index']);
+
+Route::resource('/post', 'PostsController');
+
+Route :: post('/post/${id}', [PostsController::class, 'show']);

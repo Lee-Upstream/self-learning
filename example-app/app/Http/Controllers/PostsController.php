@@ -36,6 +36,7 @@ class PostsController extends Controller
     public function show(string $id)
     {
         //
+        return "this is a place holder, this is the show method" . $id;
     }
 
     /**
