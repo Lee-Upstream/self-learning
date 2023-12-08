@@ -17,6 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
 // handle router name that finish with "/test"
 Route::get('/test', function(){
     echo 'Hello World';
@@ -42,10 +43,13 @@ Route :: get('admin/posts/example', array('as'=>'admin.home',function(){
 //php artisan route:list
 
 
-Route::get('/post/{id}', [PostsController::class, 'index']);
+// Route::get('/post/{id}', [PostsController::class, 'index']);
 
-Route::resource('/post', 'PostsController');
+// Route::resource('/post', 'PostsController');
 
-Route :: post('/post/${id}', [PostsController::class, 'show']);
+// Route :: post('/post/${id}', [PostsController::class, 'show']);
 
 Route :: get('/contact', [PostsController :: class, 'contact']);
+
+Route :: get('/post/{name_of_var}', [PostsController::class, 'show_post']);
+// need to make sure that the route is unique

@@ -67,4 +67,9 @@ class PostsController extends Controller
         return view('contact');
         // if not in the view directory, can use:   return view('pages.contact')
     }
+
+    public function show_post($id){ // var is passed from the url to the function
+        return view('post')->with('id', $id); // this function automatically search all the files named post in the view folder
+    }
+
 }
