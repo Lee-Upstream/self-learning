@@ -53,3 +53,5 @@ Route :: get('/contact', [PostsController :: class, 'contact']);
 
 Route :: get('/post/{name_of_var}', [PostsController::class, 'show_post']);
 // need to make sure that the route is unique
+
+Route::get('/multiple_parameter/{id}/{name}/{password}', [PostsController::class, 'multiple_parameter']);

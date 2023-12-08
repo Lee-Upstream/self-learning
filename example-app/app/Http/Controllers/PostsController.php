@@ -72,4 +72,8 @@ class PostsController extends Controller
         return view('post')->with('id', $id); // this function automatically search all the files named post in the view folder
     }
 
+    public function multiple_parameter($id, $name, $password){
+        return view('post', compact('id', 'name', 'password'));
+    }
+    
 }
